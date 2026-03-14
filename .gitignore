@@ -1,0 +1,16 @@
+# WordPress core
+wp-admin/
+wp-includes/
+
+# uploads
+wp-content/uploads/
+
+# config
+wp-config.php
+
+# system
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
