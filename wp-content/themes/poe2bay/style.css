@@ -5,3 +5,26 @@ Author: Eduard Zaworitnii
 Author URI: https://
 Text Domain: poe2bay
 
+*/
+
+body {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.woocommerce ul.products li.product {
+  background-color: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.woocommerce div.product {
+  background-color: #020617;
+}
+.card {
+  background-color: #1e293b;
+  border: none;
+}
+.navbar {
+  background-color: #020617 !important;
+}
