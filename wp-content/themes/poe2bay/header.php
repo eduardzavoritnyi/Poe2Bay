@@ -11,6 +11,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<?php $poe2bay_theme_options = poe2bay_theme_options(); ?>
 
 <div class="wrapper">
 
@@ -20,27 +21,35 @@
                 <div class="row">
                     <div class="col-6 col-sm-4">
                         <div class="header-top-phone d-flex align-items-center h-100">
+                            <?php if(! empty($poe2bay_theme_options['phone'])) : ?>
                             <i class="fa-solid fa-mobile-screen"></i>
-                            <a href="tel:+1234567890" class="ms-2">123-456-7890</a>
+                            <a href="tel:+<? echo  str_replace(array(' ', '-', '+'), array('','',''), $poe2bay_theme_options['phone']) ?>" class="ms-2"><?php echo $poe2bay_theme_options['phone']  ?></a>
+                            <?php endif; ?>
                         </div>
                     </div>
 
                     <div class="col-sm-4 d-none d-sm-block">
                         <ul class="social-icons d-flex justify-content-center">
+                         <li>
+                            <?php if(!empty($poe2bay_theme_options['youtube'])) : ?>
+                                 <a href="<?php echo $poe2bay_theme_options['youtube']; ?>" target="_blank">
+                                     <i class="fa-brands fa-youtube"></i>
+                                  </a>
+                             <?php endif; ?>
+                                </li>
                             <li>
-                                <a href="#">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
+                                 <?php if(!empty($poe2bay_theme_options['facebook'])) : ?>
+                                <a href="<?php echo $poe2bay_theme_options['facebook']; ?>">
                                     <i class="fa-brands fa-facebook-f"></i>
                                 </a>
+                                  <?php endif; ?>
                             </li>
                             <li>
-                                <a href="#">
+                                 <?php if(!empty($poe2bay_theme_options['instagramпше'])) : ?>
+                                <a href="<?php echo $poe2bay_theme_options['instagram']; ?>">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
+                                 <?php endif; ?>
                             </li>
                         </ul>
                     </div>
@@ -88,7 +97,7 @@
         </div>
         <!-- ./header-top -->
 
-        <div class="header-middle bg-white py-4">
+        <div class="header-middle  py-4">
             <div class="container-fluid">
                 <div class="row align-items-center">
 

@@ -39,9 +39,9 @@ img {
     height: auto;
 }
 
-.carousel-item{
+/* .carousel-item{
     height: 1020px;
-}
+} */
 
 
 
@@ -168,7 +168,7 @@ ul.social-icons a:hover {
 }
 
 .header-top .btn {
-      --bg-color: #0b1220;  
+   color: #ffffff;
 }
 
 .header-logo {
@@ -179,7 +179,7 @@ ul.social-icons a:hover {
 }
 
 .header-logo:hover {
-    color: var(--contrast-color);
+    color: var( --red-color);
 }
 
 .cart-buttons .btn {
