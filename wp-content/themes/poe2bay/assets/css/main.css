@@ -39,6 +39,12 @@ img {
     height: auto;
 }
 
+.carousel-item{
+    height: 1020px;
+}
+
+
+
 .btn,
 .dropdown-menu,
 .form-control,
@@ -104,6 +110,7 @@ section {
     padding-right: 1rem;
     position: relative;
     z-index: 1;
+        color: #fff;
 }
 
 .section-title::after {
@@ -307,6 +314,8 @@ ul.social-icons a:hover {
     background: radial-gradient(circle at top, rgba(220, 38, 38, 0.15), transparent 70%);
     opacity: 0;
     transition: .3s;
+        pointer-events: none;
+
 }
 
 /* 🔥 hover */
@@ -318,6 +327,9 @@ ul.social-icons a:hover {
 
 .product-card:hover::before {
     opacity: 1;
+}
+.product-excerpt {
+    min-height: 40px;
 }
 
 .product-card-offer > div {
@@ -336,7 +348,6 @@ ul.social-icons a:hover {
 .product-thumb {
     padding: 20px;
     text-align: center;
-      min-height: 160px; /* однакова зона під картинку */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,11 +361,21 @@ ul.social-icons a:hover {
 .product-card:hover .product-thumb img {
     transform: scale(1.1);
 }
+.product-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-details h4 {
+    min-height: 48px;
+}
+
 .product-details h4 a {
     color: #e2e8f0;
     font-weight: 500;
         height: 48px; /* фікс висоти */
-    display: -webkit-box;
+       display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -380,6 +401,8 @@ ul.social-icons a:hover {
 
 .row > div {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .row > div > .product-card {
@@ -474,8 +497,13 @@ ul.social-icons a:hover {
 .sidebar .section-title span,
 .bg-white .section-title span {
     --bg-color: #0b1220;  
+
 }
 
+.header-middle,
+ .bg-white {
+  --bg-color: #0b1220 !important;   
+}
 /* ============================= About Us ============================ */
 
 /* ============================= Footer ============================ */

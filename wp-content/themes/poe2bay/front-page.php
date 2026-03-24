@@ -155,6 +155,7 @@
 						<div class="product-card">
 							<div class="product-card-offer">
 								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
 							</div>
 							<div class="product-thumb">
 								<a href="product.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/products/2.jpg" alt=""></a>
@@ -180,8 +181,8 @@
 					<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
 						<div class="product-card">
 							<div class="product-card-offer">
-								<!-- <div class="offer-hit">Hit</div>
-								<div class="offer-new">New</div> -->
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
 							</div>
 							<div class="product-thumb">
 								<a href="product.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/products/3.jpg" alt=""></a>
@@ -208,6 +209,7 @@
 						<div class="product-card">
 							<div class="product-card-offer">
 								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
 							</div>
 							<div class="product-thumb">
 								<a href="product.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/products/4.jpg" alt=""></a>
@@ -391,8 +393,9 @@
 
 					<div class="product-card">
 						<div class="product-card-offer">
-							<div class="offer-hit">Hit</div>
-						</div>
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
 						<div class="product-thumb">
 							<a href="product.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/products/2.jpg" alt=""></a>
 						</div>
@@ -415,8 +418,8 @@
 
 					<div class="product-card">
 						<div class="product-card-offer">
-							<!-- <div class="offer-hit">Hit</div>
-							<div class="offer-new">New</div> -->
+							<div class="offer-hit">Hit</div>
+							<div class="offer-new">New</div>
 						</div>
 						<div class="product-thumb">
 							<a href="product.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/products/3.jpg" alt=""></a>
@@ -440,8 +443,9 @@
 
 					<div class="product-card">
 						<div class="product-card-offer">
-							<div class="offer-hit">Hit</div>
-						</div>
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
 						<div class="product-thumb">
 							<a href="product.html"><img src="<?php echo get_template_directory_uri() ?>/assets/img/products/4.jpg" alt=""></a>
 						</div>

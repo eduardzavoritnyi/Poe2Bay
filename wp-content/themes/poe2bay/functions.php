@@ -1,8 +1,15 @@
 <?php
 
 add_action('after_setup_theme', function () {
+	load_theme_textdomain('poe2bay', get_template_directory() . '/languages'); 
     add_theme_support('woocommerce');
     add_theme_support('title-tag');
+
+	register_nav_menus(
+		[
+			'header-menu' => __('Header menu', 'poe2bay')
+		]
+	);
 });
 
 add_action( 'wp_enqueue_scripts', function () {
@@ -22,3 +29,4 @@ add_action( 'wp_enqueue_scripts', function () {
 } );
 
 require_once get_template_directory() . '/incs/woocommerce-hooks.php';
+require_once get_template_directory() . '/incs/class-poe2bay-header-menu.php';
